@@ -1,5 +1,7 @@
 My own fork of Procgen that exposes the x and y position of the agent in Procgen in the `info` dict. 
 
+the `apple-silicon` branch modifies the Makelist to enable building Procgen natively on M1 chips with Apple Silicon.
+
 **Status:** Maintenance (expect bug fixes and minor updates)
 
 # Procgen Benchmark
