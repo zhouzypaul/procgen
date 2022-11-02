@@ -175,7 +175,7 @@ class PlunderGame : public BasicAbstractGame {
 
         last_fire_time = 0;
 
-        options.center_agent = false;
+        options.center_agent = true;
 
         agent->rx = r_scale;
         agent->rotation = -1 * PI / 2;

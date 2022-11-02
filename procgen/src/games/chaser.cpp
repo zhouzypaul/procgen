@@ -163,7 +163,7 @@ class ChaserGame : public BasicAbstractGame {
 
         BasicAbstractGame::game_reset();
 
-        options.center_agent = false;
+        options.center_agent = true;
 
         agent->rx = .5;
         agent->ry = .5;

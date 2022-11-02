@@ -63,7 +63,7 @@ class MazeGame : public BasicAbstractGame {
         std::shared_ptr<MazeGen> _maze_gen(new MazeGen(&rand_gen, maze_dim));
         maze_gen = _maze_gen;
 
-        options.center_agent = options.distribution_mode == MemoryMode;
+        options.center_agent = true;
 
         agent->rx = .5;
         agent->ry = .5;

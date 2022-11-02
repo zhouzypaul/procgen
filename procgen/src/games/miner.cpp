@@ -137,7 +137,7 @@ class MinerGame : public BasicAbstractGame {
 
         int main_area = main_height * main_width;
 
-        options.center_agent = options.distribution_mode == MemoryMode;
+        options.center_agent = true;
         grid_step = true;
 
         float diamond_pct = 12 / 400.0f;

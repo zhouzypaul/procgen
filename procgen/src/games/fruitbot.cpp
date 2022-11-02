@@ -196,6 +196,8 @@ class FruitBotGame : public BasicAbstractGame {
 
     void game_reset() override {
         BasicAbstractGame::game_reset();
+    
+        options.center_agent = true;
 
         last_fire_time = 0;
 
