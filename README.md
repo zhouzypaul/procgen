@@ -1,3 +1,5 @@
+My own fork of Procgen that exposes the x and y position of the agent in Procgen in the `info` dict. 
+
 **Status:** Maintenance (expect bug fixes and minor updates)
 
 # Procgen Benchmark

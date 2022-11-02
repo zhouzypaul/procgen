@@ -322,6 +322,12 @@ class MinerGame : public BasicAbstractGame {
         BasicAbstractGame::deserialize(b);
         diamonds_remaining = b->read_int();
     }
+
+    void observe() override {
+        Game::observe();
+        *(float *)(info_bufs[info_name_to_offset.at("agent_x")]) = agent->x;
+        *(float *)(info_bufs[info_name_to_offset.at("agent_y")]) = agent->y;
+    }
 };
 
 REGISTER_GAME(NAME, MinerGame);
