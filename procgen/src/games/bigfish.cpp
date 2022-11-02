@@ -61,7 +61,7 @@ class BigFish : public BasicAbstractGame {
     void game_reset() override {
         BasicAbstractGame::game_reset();
 
-        options.center_agent = false;
+        options.center_agent = true;
         fish_eaten = 0;
 
         float start_r = .5;

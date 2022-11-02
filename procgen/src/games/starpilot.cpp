@@ -329,7 +329,7 @@ class StarPilotGame : public BasicAbstractGame {
     void game_reset() override {
         BasicAbstractGame::game_reset();
 
-        options.center_agent = false;
+        options.center_agent = true;
 
         init_hps();
 

@@ -235,6 +235,8 @@ class Climber : public BasicAbstractGame {
     void game_reset() override {
         BasicAbstractGame::game_reset();
 
+        options.center_agent = true;
+
         gravity = 0.2f;
         max_jump = 1.5;
         air_control = 0.15f;

@@ -207,7 +207,7 @@ class BossfightGame : public BasicAbstractGame {
         boss_bullet_vel = options.distribution_mode == EasyMode ? .5 : .75;
         int max_extra_invulnerable = options.distribution_mode == EasyMode ? 1 : 3;
 
-        options.center_agent = false;
+        options.center_agent = true;
 
         boss = add_entity(main_width / 2, main_height / 2, 0, 0, BOSS_R, BOSS);
         choose_random_theme(boss);
