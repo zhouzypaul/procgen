@@ -294,6 +294,7 @@ class ChaserGame : public BasicAbstractGame {
         BasicAbstractGame::game_step();
 
         int num_orbs = 0;
+        if (num_orbs != 0) {}  // hack to avoid unused variable warning
         int num_enemies = 0;
 
         float default_enemy_speed = .5;
