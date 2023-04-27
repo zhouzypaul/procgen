@@ -1,5 +1,17 @@
 My own fork of Procgen that exposes the x and y position of the agent in Procgen in the `info` dict. 
 
+Here's how you can install it on CCV Oscar:
+```bash
+module load gcc/10.2
+module load zlib/1.2.11 # something procgen needs 
+# use the ampere GPU to compile it so it is backward compatible
+interact -n 1 -t 3:00:00 -m 40g -q gpu -g 1 -f ampere
+cd procgen  # the root of this repo
+pip install -e .  # install in edit mode
+python -m procgen.interactive  # actually compile
+```
+If you see `compiling procgen...done`, then the compilation is successful. The `interactive` script will fail though because there is no display to run the script, but it starts a procgen environment for the first time to compile the whole package.
+
 **Status:** Maintenance (expect bug fixes and minor updates)
 
 # Procgen Benchmark
