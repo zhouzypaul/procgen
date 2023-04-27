@@ -12,6 +12,14 @@ python -m procgen.interactive  # actually compile
 ```
 If you see `compiling procgen...done`, then the compilation is successful. The `interactive` script will fail though because there is no display to run the script, but it starts a procgen environment for the first time to compile the whole package.
 
+If the `procgen.interactive` script gives a CXX error, try
+```bash
+# clean up the previous build
+rm -r procgen/.build 
+# start again specifying where the compilers are
+CC=/gpfs/runtime/opt/gcc/10.2/bin/gcc CXX=/gpfs/runtime/opt/gcc/10.2/bin/g++ python -m procgen.interactive
+```
+
 **Status:** Maintenance (expect bug fixes and minor updates)
 
 # Procgen Benchmark
